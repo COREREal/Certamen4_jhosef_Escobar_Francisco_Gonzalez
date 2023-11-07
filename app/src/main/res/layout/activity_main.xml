@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="653dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Concesionaro"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EDidAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ID AUTO:"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/EDMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Marca:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Modelo:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDSede"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Sede"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/EDFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="00/00/0000"
+            android:inputType="date"
+            android:singleLine="false" />
+
+        <CheckBox
+            android:id="@+id/CBSeguro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desea Seguro?" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="AgregarLista"
+            android:text="Agregar" />
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Actualizar"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/btnTabla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Vertabla"
+            android:text="Ver Tabla" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
