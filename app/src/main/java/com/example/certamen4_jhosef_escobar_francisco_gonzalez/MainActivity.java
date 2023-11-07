@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText idAuto,marca,modelo,sede,fecha;
     private CheckBox seguro;
     private Button agregar,actualizar,vertabla;
+    //primera modificacion
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
